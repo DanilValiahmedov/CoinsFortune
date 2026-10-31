@@ -15,8 +15,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CoinPatternBackground(
-                pattern = CoinPattern.LOCK,
-                symbolAlpha = 0.20f,
+                pattern = CoinPattern.QUESTION,
+                symbolAlpha = 0.6f,
                 modifier = Modifier.fillMaxSize()
             )
         }
