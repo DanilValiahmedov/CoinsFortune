@@ -2,6 +2,7 @@ package com.valimade.coinsfortune.data.store
 
 import com.valimade.coinsfortune.R
 import com.valimade.coinsfortune.domain.model.Coin
+import com.valimade.coinsfortune.ui.model.CoinPattern
 
 object CoinsStore {
 
@@ -87,6 +88,7 @@ object CoinsStore {
     val coins = listOf(
         Coin(
             name = "Монета выбора",
+            background = CoinPattern.QUESTION,
             firstSideName = "ДА",
             firstSideImage = R.drawable.coin_yes,
             firstSideProbability = 48f,
@@ -103,6 +105,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета истины",
+            background = CoinPattern.SCALES,
             firstSideName = "ПРАВДА",
             firstSideImage = R.drawable.coin_true,
             firstSideProbability = 48f,
@@ -130,6 +133,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета случая",
+            background = CoinPattern.HORSESHOE,
             firstSideName = "УДАЧА",
             firstSideImage = R.drawable.coin_luck,
             firstSideProbability = 56f,
@@ -159,6 +163,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета чувств",
+            background = CoinPattern.HEART,
             firstSideName = "ЛЮБОВЬ",
             firstSideImage = R.drawable.coin_love,
             firstSideProbability = 54f,
@@ -186,6 +191,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета баланса",
+            background = CoinPattern.YIN_YANG,
             firstSideName = "СЕРДЦЕ",
             firstSideImage = R.drawable.coin_heart,
             firstSideProbability = 50f,
@@ -214,6 +220,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета пути",
+            background = CoinPattern.STOP,
             firstSideName = "ИДИ",
             firstSideImage = R.drawable.coin_go,
             firstSideProbability = 52f,
@@ -244,6 +251,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета времени",
+            background = CoinPattern.SPIRAL,
             firstSideName = "СЕЙЧАС",
             firstSideImage = R.drawable.coin_now,
             firstSideProbability = 52f,
@@ -273,6 +281,7 @@ object CoinsStore {
 
         Coin(
             name = "Монета решения",
+            background = CoinPattern.LOCK,
             firstSideName = "ПРИНЯТЬ",
             firstSideImage = R.drawable.coin_accept,
             firstSideProbability = 54f,
