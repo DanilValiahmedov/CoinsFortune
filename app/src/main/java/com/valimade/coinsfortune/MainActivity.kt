@@ -5,20 +5,23 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.valimade.coinsfortune.ui.model.CoinPattern
-import com.valimade.coinsfortune.ui.util.CoinPatternBackground
+import com.valimade.coinsfortune.ui.screen.MainScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CoinPatternBackground(
-                pattern = CoinPattern.QUESTION,
-                symbolAlpha = 0.6f,
-                modifier = Modifier.fillMaxSize()
-            )
+            MaterialTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize()
+                ) {
+                    MainScreen()
+                }
+            }
         }
     }
 }
